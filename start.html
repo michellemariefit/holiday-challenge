@@ -1,0 +1,108 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Holiday Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7a4f5a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Holiday Challenge">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vault.css">
+<style>
+/* Home: set the goal once, then today's rules, today's workout and the week, on one page. */
+.goalbar{background:var(--brand);color:#fff;border-radius:20px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.goalbar .eyebrow{color:var(--gold)}
+.goalbar h2{color:#fff;font-size:28px}
+.goalbar p{color:rgba(255,255,255,.85);font-size:15px}
+.goalbar a{color:#fff;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.setup .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.setup .opts button{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px;text-align:left;font-size:15px}
+.setup .opts button[aria-pressed="true"]{border-color:var(--brand);background:var(--brand-soft)}
+.setup .opts button b{display:block;font-weight:600}
+.setup .opts button small{color:var(--muted);font-size:13px}
+.setup input[type="text"],.setup input[type="number"]{width:100%}
+.rules{display:flex;flex-direction:column;gap:6px}
+.rules label{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:15px}
+.rules input{width:22px;height:22px;flex:none;accent-color:var(--brand);margin-top:1px}
+.rules label.on{background:var(--done-soft);border-color:var(--done)}
+.rules label small{display:block;color:var(--muted);font-size:13px}
+.score{display:flex;justify-content:space-between;align-items:baseline}
+.score b{font:700 28px/1 var(--display);color:var(--brand)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.stat b{display:block;font:700 30px/1 var(--display);color:var(--brand)}
+.stat small{color:var(--muted);font-size:13px}
+.stat.full{border-color:var(--done);background:var(--done-soft)}
+</style>
+<div class="wrap">
+  <header class="page">
+    <img src="icons/logo.png" alt="The Holiday Challenge" style="width:min(320px,82%);height:auto;margin-bottom:4px">
+    <p class="lead">A plan to get through the holidays without the extra pounds. Rules, water, workouts, all on your phone.</p>
+  </header>
+  <section id="top"></section>
+  <section id="today"></section>
+  <section id="week"></section>
+  <h2 class="also">Everything else</h2>
+  <section class="ways">
+    <a class="way" href="index.html#all"><span class="ic">W</span><span><b>The workout</b><small>Foundation 1, Day 1, 2 and 3. Play, List or Print. Gym or home.</small></span></a>
+    <a class="way" href="week.html"><span class="ic">7</span><span><b>This week</b><small>Three weight days, three Zone 2 cardio days. Log cardio here.</small></span></a>
+    <a class="way" href="water.html"><span class="ic">H</span><span><b>Water</b><small>Your number, your jugs. Tap one each time you finish.</small></span></a>
+    <a class="way" href="rules.html"><span class="ic">R</span><span><b>The rules, explained</b><small>Michelle's notes on carbs, protein, eating out and fats.</small></span></a>
+    <a class="way" href="vault.html"><span class="ic gold">✦</span><span><b>The Toning Vault</b><small>This workout is Step 1 of 5. Here's the rest.</small></span></a>
+  </section>
+  <section class="card soft">
+    <h3>Put it on your home screen</h3>
+    <p>Then it opens like an app, full screen, and the photos work with bad signal.</p>
+    <a href="install.html" style="font-weight:600;color:var(--brand)">Show me how, with pictures →</a>
+  </section>
+</div>
+<script src="vault.js"></script>
+<script>
+let D=null;
+function render(){
+  const g=goal();
+  if(!g||!g.text){
+    const o=store.get('hc:goal',{pick:'zero',place:'gym'});
+    $('#top').innerHTML=`<div class="card setup"><span class="eyebrow">First, your goal</span><h2>What's the goal through December 31?</h2>
+      <p>Say it, and the app shows it to you every day. Michelle's suggestion: gain zero. If you usually gain more, pick "under 5".</p>
+      <div class="opts"><button data-pick="zero" aria-pressed="${o.pick==='zero'}"><b>Gain 0 lb</b><small>Hold the line through every party</small></button><button data-pick="five" aria-pressed="${o.pick==='five'}"><b>Gain under 5 lb</b><small>Less than most years</small></button><button data-pick="lose" aria-pressed="${o.pick==='lose'}"><b>Lose a few</b><small>Ambitious. Follow every rule.</small></button><button data-pick="own" aria-pressed="${o.pick==='own'}"><b>My own</b><small>Type it below</small></button></div>
+      ${o.pick==='own'?`<input type="text" id="own" placeholder="My goal is…" value="${esc(o.own||'')}">`:''}
+      <label class="note">Your weight (lb), for the water goal<input type="number" id="wt" inputmode="numeric" min="80" max="350" value="${o.wt||''}" placeholder="150"></label>
+      <div class="opts"><button data-place="gym" aria-pressed="${o.place==='gym'}"><b>Gym</b><small>Cables, machines, dumbbells</small></button><button data-place="home" aria-pressed="${o.place==='home'}"><b>Home</b><small>Dumbbells, band, stability ball</small></button></div>
+      <button class="go" id="begin">Start the challenge</button>
+      <p class="note">Reply to Michelle's email with your goal too. Saying it out loud is half of it.</p></div>`;
+    $('#today').innerHTML='';$('#week').innerHTML='';return;
+  }
+  const left=daysLeft(), rs=rulesFor(TODAY), dr=dayRules(TODAY), sc=dayScore(TODAY), st=streak();
+  $('#top').innerHTML=`<div class="goalbar"><span class="eyebrow">My goal · ${left} day${left===1?'':'s'} left</span><h2>${esc(g.text)}</h2><p>${st?`<b>${st}</b> day${st===1?'':'s'} in a row on the rules. `:''}Started ${esc(g.start)}. <a href="#" data-edit="1">Change goal</a></p></div>`;
+  const wdName=WEEKDAYS[(new Date().getDay()+6)%7];
+  $('#today').innerHTML=`<div class="card"><div class="score"><span><span class="eyebrow">Today · ${wdName}</span><h3>The rules</h3></span><b>${sc.done}/${sc.total}</b></div>
+    <div class="rules">${rs.map(r=>`<label class="${dr[r.id]?'on':''}"><input type="checkbox" data-rule="${r.id}" ${dr[r.id]?'checked':''} ${r.auto?'disabled':''}><span>${esc(r.t)}${r.s?`<small>${esc(r.s)}</small>`:''}</span></label>`).join('')}</div>
+    <p class="note">${(new Date().getDay()+6)%7>=5?'Weekend: the wheat, gluten and sugar rule is off. Everything else stays.':'Tick them as you go. The water one ticks itself when you hit your jugs.'}</p></div>`;
+  const mon=monday(new Date()), w=doneInWeek(mon).length, c=cardioInWeek(mon).length;
+  const nd=nextDay(D,g.place||'gym'), doneToday=doneOn(TODAY).length, cToday=cardioLog().filter(x=>x.d===TODAY).length;
+  $('#week').innerHTML=`<div class="two"><div class="stat ${w>=3?'full':''}"><b>${w}/3</b><small>weight workouts this week</small></div><div class="stat ${c>=3?'full':''}"><b>${c}/3</b><small>Zone 2 cardio this week</small></div></div>
+    <div class="card">${doneToday?`<h3>Workout done today ✓</h3><p>${esc(doneOn(TODAY).map(x=>x.name).join(', '))}. ${cToday?'Cardio logged too. Rest up.':'Add 20 to 30 minutes of Zone 2 cardio after it if you have it in you, or tomorrow.'}</p>`:`<h3>Next up: ${esc(nd.workout?'' : '')}Foundation 1 · Day ${nd.day}</h3><p>${nd.n} exercises, about ${nd.minutes} minutes. Three a week, in order. Cardio goes after it or on its own day.</p><a class="go" href="play.html#${nd.id}">▶ Play Day ${nd.day}</a>`}
+    <div class="toolrow"><a class="pill" href="index.html#${nd.id}">List view</a><a class="pill" href="week.html">Log cardio</a><a class="pill" href="water.html">Water</a></div></div>`;
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button,a[data-edit]');if(!b)return;
+  if(b.dataset.edit){e.preventDefault();const g=goal();g.text='';store.set('hc:goal',g);render();return}
+  const o=store.get('hc:goal',{pick:'zero',place:'gym'});
+  if(b.dataset.pick){o.pick=b.dataset.pick;store.set('hc:goal',o);render();return}
+  if(b.dataset.place){o.place=b.dataset.place;store.set('hc:goal',o);render();return}
+  if(b.id==='begin'){
+    const own=$('#own');const wt=+($('#wt').value||0);
+    const text={zero:'Gain 0 lb through the holidays',five:'Gain under 5 lb through the holidays',lose:'Lose a few pounds through the holidays',own:(own&&own.value.trim())||'My own goal'}[o.pick||'zero'];
+    store.set('hc:goal',{...o,text,wt,start:o.start||TODAY});
+    if(wt){const h=store.get('hc:hyd',{jug:20});h.wt=wt;store.set('hc:hyd',h)}
+    render();window.scrollTo(0,0);
+  }
+});
+document.addEventListener('input',e=>{if(e.target.id==='own'){const o=store.get('hc:goal',{});o.own=e.target.value;store.set('hc:goal',o)}if(e.target.id==='wt'){const o=store.get('hc:goal',{});o.wt=+e.target.value;store.set('hc:goal',o)}});
+document.addEventListener('change',e=>{const i=e.target.closest('input[data-rule]');if(!i)return;setRule(TODAY,i.dataset.rule,i.checked);render()});
+load().then(d=>{D=d;render()}).catch(()=>{$('#today').innerHTML='<div class="err">Did not load. Check your connection and refresh.</div>'});
+</script>

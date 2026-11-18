@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>This week · The Holiday Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7a4f5a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Holiday Challenge">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vault.css">
+<style>
+.nav{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nav button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:9px 14px;font-weight:600}
+.grid{display:grid;grid-template-columns:70px repeat(7,1fr);gap:4px;align-items:center}
+.grid .h{font:500 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center}
+.grid .h b{display:block;font:700 18px/1.2 var(--display);color:var(--ink)}
+.grid .h.today b{color:var(--brand)}
+.grid .lbl{font-size:13px;color:var(--muted)}
+.grid .c{height:40px;border-radius:10px;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;font-size:14px;font-weight:600;color:var(--muted)}
+.grid .c.on{background:var(--done-soft);border-color:var(--done);color:var(--done)}
+.grid .c.part{background:var(--gold-soft);border-color:var(--gold);color:var(--ink)}
+.grid button.c{cursor:pointer;color:var(--ink)}
+.logc{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.logc input{width:80px;text-align:center}
+.logc .go{width:auto;padding:12px 18px;font-size:15px}
+.hist{font-size:14px;color:var(--muted)}
+</style>
+<div class="wrap">
+  <header class="page"><a class="back" href="start.html">← Home</a><span class="eyebrow">The Holiday Challenge</span><h1>This week</h1><p class="lead">Three weight workouts. Three Zone 2 cardio sessions, 20 to 30 minutes, after a workout or on their own day. The rules every day.</p></header>
+  <div class="nav"><button id="prev">← Last week</button><span id="title" class="note"></span><button id="next">Next week →</button></div>
+  <section class="card" id="grid"></section>
+  <section class="card">
+    <h3>Log cardio</h3>
+    <p>Zone 2 means you could hold a conversation. A brisk walk, the elliptical, the bike, an easy jog. Not a sprint.</p>
+    <div class="logc"><input type="number" id="min" inputmode="numeric" min="5" max="120" value="25"> minutes <button class="go" id="logc">Log today's cardio</button></div>
+    <p class="hist" id="hist"></p>
+  </section>
+  <section class="card">
+    <h3>How the ticks work</h3>
+    <p>Weights tick themselves when you press Finish on a workout. Cardio you log here. Rules come from the home page checklist: green when you got all of them (or all but one), gold when you got some.</p>
+  </section>
+</div>
+<script src="vault.js"></script>
+<script>
+let off=0;
+function render(){
+  const mon=monday(new Date());mon.setDate(mon.getDate()+off*7);
+  $('#title').textContent=off===0?'This week':off===-1?'Last week':`Week of ${mon.toLocaleDateString(undefined,{month:'short',day:'numeric'})}`;
+  const days=WEEKDAYS.map((n,i)=>{const dt=new Date(mon.getTime()+i*DAY);return {n,dt,ds:ymd(dt)}});
+  const w=doneInWeek(mon), c=cardioInWeek(mon);
+  const row=(label,cells)=>`<div class="lbl">${label}</div>${cells.join('')}`;
+  $('#grid').innerHTML=`<div class="grid"><div></div>${days.map(d=>`<div class="h ${d.ds===TODAY?'today':''}">${d.n}<b>${d.dt.getDate()}</b></div>`).join('')}
+    ${row('Weights',days.map(d=>{const x=w.filter(y=>y.d===d.ds);return `<div class="c ${x.length?'on':''}" title="${esc(x.map(y=>y.name).join(', '))}">${x.length?'✓':''}</div>`}))}
+    ${row('Cardio',days.map(d=>{const x=c.filter(y=>y.d===d.ds);const m=x.reduce((a,y)=>a+y.min,0);return x.length?`<button class="c on" data-undo="${d.ds}" title="tap to remove">${m}m</button>`:(d.ds<=TODAY?`<button class="c" data-add="${d.ds}">+</button>`:'<div class="c"></div>')}))}
+    ${row('Rules',days.map(d=>{const s=dayScore(d.ds);const g=goal();if(d.ds>TODAY||(g&&g.start&&d.ds<g.start))return '<div class="c"></div>';return `<div class="c ${s.done>=s.total-1&&s.done>0?'on':s.done?'part':''}">${s.done?s.done+'/'+s.total:''}</div>`}))}
+  </div>
+  <p class="note" style="margin-top:10px"><b>${w.length}/3</b> weights · <b>${c.length}/3</b> cardio${w.length>=3&&c.length>=3?' · Week done. That is the whole challenge, repeated.':''}</p>`;
+  const h=cardioLog().slice(-6).reverse();
+  $('#hist').textContent=h.length?'Recent: '+h.map(x=>`${x.d.slice(5)} ${x.min} min`).join(' · '):'';
+}
+$('#prev').onclick=()=>{off--;render()};$('#next').onclick=()=>{off++;render()};
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.id==='logc'){logCardio($('#min').value,TODAY);render();return}
+  if(b.dataset.add){logCardio($('#min').value,b.dataset.add);render();return}
+  if(b.dataset.undo){if(!confirm('Remove this cardio entry?'))return;const l=cardioLog().filter(x=>x.d!==b.dataset.undo);store.set('hc:cardio',l);render();return}
+});
+render();
+</script>

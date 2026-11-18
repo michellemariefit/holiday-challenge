@@ -1,0 +1,1558 @@
+{
+ "phases": [
+  {
+   "id": "flf",
+   "step": 1,
+   "name": "Fat Loss Foundation",
+   "short": "Foundation",
+   "tag": "Wake the body up",
+   "reps": "20-30 reps",
+   "load": "Lowest weight you'll use",
+   "restNote": "Rest 30 sec or less",
+   "quote": "Start here. Lay the foundation.",
+   "outcomes": "Build endurance \u00b7 Burn fat \u00b7 Wake up your muscles",
+   "about": "Full body, high reps, light weight, pulses. Three days a week. This is Step 1 of the Toning Vault's five-step Ladder: the metabolic on-ramp.",
+   "workouts": [
+    {
+     "id": "flf-1",
+     "series": "flf",
+     "home": false,
+     "days": [
+      {
+       "id": "flf-1-d1",
+       "day": 1,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Step Ups Pulses",
+           "video": "9nemn317XXE",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/9nemn317XXE-pdf.webp",
+           "row": "Step-Up",
+           "startPhoto": "images/9nemn317XXE-start.webp",
+           "endPhoto": "images/9nemn317XXE-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Stationary Lunges Pulses",
+           "video": "NZJ6Ppp6ejY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/NZJ6Ppp6ejY-pdf.webp",
+           "row": "Stationary Lunge",
+           "startPhoto": "images/NZJ6Ppp6ejY-start.webp",
+           "endPhoto": "images/NZJ6Ppp6ejY-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Incline Dumbbell Presses Pulses",
+           "video": "1tVuREPeiw8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/1tVuREPeiw8-pdf.webp",
+           "row": "Incline DB Press",
+           "startPhoto": "images/1tVuREPeiw8-start.webp",
+           "endPhoto": "images/1tVuREPeiw8-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Cable Fly Pulses",
+           "video": "1cfPOgUUZ5E",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/1cfPOgUUZ5E-pdf.webp",
+           "row": "Cable Fly",
+           "startPhoto": "images/1cfPOgUUZ5E-start.webp",
+           "endPhoto": "images/1cfPOgUUZ5E-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Supine Stability Ball hip Extensions Single Leg Pulses",
+           "video": "sUp-h2ZY_IY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/sUp-h2ZY_IY-pdf.webp",
+           "row": "Stability Ball Hip Extension",
+           "startPhoto": "images/sUp-h2ZY_IY-start.webp",
+           "endPhoto": "images/sUp-h2ZY_IY-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Stability Ball Leg Curl Pulses",
+           "video": "8NiUg6uVyEU",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/8NiUg6uVyEU-pdf.webp",
+           "row": "Stability Ball Leg Curl",
+           "startPhoto": "images/8NiUg6uVyEU-start.webp",
+           "endPhoto": "images/8NiUg6uVyEU-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Straight Arm Pulldown Pulses",
+           "video": "KNh82NqLIzc",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/KNh82NqLIzc-pdf.webp",
+           "row": "Straight-Arm Pulldown",
+           "startPhoto": "images/KNh82NqLIzc-start.webp",
+           "endPhoto": "images/KNh82NqLIzc-end.webp"
+          },
+          {
+           "code": "D2",
+           "name": "Dumbbell High Rows Pulses",
+           "video": "1iFkUoBaxuc",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/1iFkUoBaxuc-pdf.webp",
+           "row": "High Row",
+           "startPhoto": "images/1iFkUoBaxuc-start.webp",
+           "endPhoto": "images/1iFkUoBaxuc-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 25,
+       "n": 8
+      },
+      {
+       "id": "flf-1-d2",
+       "day": 2,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Lateral Raises Pulses",
+           "video": "A7g06iUnhT8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/A7g06iUnhT8-pdf.webp",
+           "row": "Lateral Raise",
+           "startPhoto": "images/A7g06iUnhT8-start.webp",
+           "endPhoto": "images/A7g06iUnhT8-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Dumbbell Shoulder Press Pulses",
+           "video": "7FcLkHdf4Js",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/7FcLkHdf4Js-pdf.webp",
+           "row": "Shoulder Press",
+           "startPhoto": "images/7FcLkHdf4Js-start.webp",
+           "endPhoto": "images/7FcLkHdf4Js-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Dips",
+           "video": "JLHJ0Aho904",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/JLHJ0Aho904-pdf.webp",
+           "row": "Dips",
+           "startPhoto": "images/JLHJ0Aho904-start.webp",
+           "endPhoto": "images/JLHJ0Aho904-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Rope Pulldown Pulses",
+           "video": "wwU92nSlVAQ",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/wwU92nSlVAQ-pdf.webp",
+           "row": "Rope Pulldown",
+           "startPhoto": "images/wwU92nSlVAQ-start.webp",
+           "endPhoto": "images/wwU92nSlVAQ-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Dumbbell Bicep Curl Pulses",
+           "video": "SBhNJN_FLAQ",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/SBhNJN_FLAQ-pdf.webp",
+           "row": "DB Curl",
+           "startPhoto": "images/SBhNJN_FLAQ-start.webp",
+           "endPhoto": "images/SBhNJN_FLAQ-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Dumbbell Hammer Curl Pulses",
+           "video": "0xCuPSAZ-dk",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/0xCuPSAZ-dk-pdf.webp",
+           "row": "Hammer Curl",
+           "startPhoto": "images/0xCuPSAZ-dk-start.webp",
+           "endPhoto": "images/0xCuPSAZ-dk-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Stability Ball Skiers",
+           "video": "VAT6fUedIl8",
+           "reps": "20",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "",
+           "photo": "images/VAT6fUedIl8-pdf.webp",
+           "row": "Skiers"
+          },
+          {
+           "code": "D2",
+           "name": "Stability Ball Rollouts",
+           "video": "eYooXUnnw44",
+           "reps": "20-60s",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "",
+           "note": "And Hold 60s",
+           "photo": "images/eYooXUnnw44-pdf.webp",
+           "row": "Stability Ball Rollout",
+           "startPhoto": "images/eYooXUnnw44-start.webp",
+           "endPhoto": "images/eYooXUnnw44-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 30,
+       "n": 8
+      },
+      {
+       "id": "flf-1-d3",
+       "day": 3,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Plie Squats Pulses",
+           "video": "yf5izTNXw_k",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/yf5izTNXw_k-pdf.webp",
+           "row": "Plie Squat",
+           "startPhoto": "images/yf5izTNXw_k-start.webp",
+           "endPhoto": "images/yf5izTNXw_k-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Reverse Lunges Pulses",
+           "video": "gqXModadJgw",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/gqXModadJgw-pdf.webp",
+           "row": "Reverse Lunge",
+           "startPhoto": "images/gqXModadJgw-start.webp",
+           "endPhoto": "images/gqXModadJgw-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Dumbbell Presses Pulses",
+           "video": "1tVuREPeiw8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/1tVuREPeiw8-pdf.webp",
+           "row": "Dumbbell Press",
+           "startPhoto": "images/1tVuREPeiw8-start.webp",
+           "endPhoto": "images/1tVuREPeiw8-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Pushups Pulses",
+           "video": "V1T3CrnqkFE",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/V1T3CrnqkFE-pdf.webp",
+           "row": "Push-Up",
+           "startPhoto": "images/V1T3CrnqkFE-start.webp",
+           "endPhoto": "images/V1T3CrnqkFE-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Lying Leg Curl Pulses",
+           "video": "85kdyJiaaeY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/85kdyJiaaeY-pdf.webp",
+           "row": "Stability Ball Leg Curl",
+           "startPhoto": "images/85kdyJiaaeY-start.webp",
+           "endPhoto": "images/85kdyJiaaeY-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Supine Stability Ball Hip Extensions Pulses",
+           "video": "sUp-h2ZY_IY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/sUp-h2ZY_IY-pdf.webp",
+           "row": "Stability Ball Hip Extension",
+           "startPhoto": "images/sUp-h2ZY_IY-start.webp",
+           "endPhoto": "images/sUp-h2ZY_IY-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Cable High Rows Pulses",
+           "video": "Iugcoan3xt4",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/Iugcoan3xt4-pdf.webp",
+           "row": "High Row",
+           "startPhoto": "images/Iugcoan3xt4-start.webp",
+           "endPhoto": "images/Iugcoan3xt4-end.webp"
+          },
+          {
+           "code": "D2",
+           "name": "Bent Over Dumbbell Rows Pulses",
+           "video": "MSpzYNZ_BFw",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/MSpzYNZ_BFw-pdf.webp",
+           "row": "Bent-Over Row",
+           "startPhoto": "images/MSpzYNZ_BFw-start.webp",
+           "endPhoto": "images/MSpzYNZ_BFw-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 25,
+       "n": 8
+      }
+     ],
+     "number": 1,
+     "name": "Foundation 1",
+     "base": "flf-1",
+     "homeId": "flf-1-home"
+    },
+    {
+     "id": "flf-1-home",
+     "series": "flf",
+     "home": true,
+     "days": [
+      {
+       "id": "flf-1-home-d1",
+       "day": 1,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Step Ups Pulses",
+           "video": "9nemn317XXE",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/9nemn317XXE-pdf.webp",
+           "row": "Step-Up",
+           "startPhoto": "images/9nemn317XXE-start.webp",
+           "endPhoto": "images/9nemn317XXE-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Stationary Lunges Pulses",
+           "video": "NZJ6Ppp6ejY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/NZJ6Ppp6ejY-pdf.webp",
+           "row": "Stationary Lunge",
+           "startPhoto": "images/NZJ6Ppp6ejY-start.webp",
+           "endPhoto": "images/NZJ6Ppp6ejY-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Incline Dumbbell Presses Pulses",
+           "video": "1tVuREPeiw8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "homeName": "Dumbbell Chest Press",
+           "homeVideo": "jU65WRZ1GNo",
+           "photo": "images/1tVuREPeiw8-pdf.webp",
+           "row": "Incline DB Press",
+           "homeRow": "Dumbbell Press",
+           "startPhoto": "images/1tVuREPeiw8-start.webp",
+           "endPhoto": "images/1tVuREPeiw8-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Cable Fly Pulses",
+           "video": "1cfPOgUUZ5E",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "homeName": "Dumbbell Flys",
+           "homeVideo": "swvfEyxv4YM",
+           "photo": "images/1cfPOgUUZ5E-pdf.webp",
+           "row": "Cable Fly",
+           "homeRow": "Cable Fly",
+           "startPhoto": "images/1cfPOgUUZ5E-start.webp",
+           "endPhoto": "images/1cfPOgUUZ5E-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Supine Stability Ball hip Extensions Single Leg Pulses",
+           "video": "sUp-h2ZY_IY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/sUp-h2ZY_IY-pdf.webp",
+           "row": "Stability Ball Hip Extension",
+           "startPhoto": "images/sUp-h2ZY_IY-start.webp",
+           "endPhoto": "images/sUp-h2ZY_IY-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Stability Ball Leg Curl Pulses",
+           "video": "8NiUg6uVyEU",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/8NiUg6uVyEU-pdf.webp",
+           "row": "Stability Ball Leg Curl",
+           "startPhoto": "images/8NiUg6uVyEU-start.webp",
+           "endPhoto": "images/8NiUg6uVyEU-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Straight Arm Pulldown Pulses",
+           "video": "KNh82NqLIzc",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "homeName": "Dumbbell Straight Arm Pulls",
+           "homeVideo": "KNh82NqLIzc",
+           "photo": "images/KNh82NqLIzc-pdf.webp",
+           "row": "Straight-Arm Pulldown",
+           "homeRow": "Straight-Arm Pulldown",
+           "startPhoto": "images/KNh82NqLIzc-start.webp",
+           "endPhoto": "images/KNh82NqLIzc-end.webp"
+          },
+          {
+           "code": "D2",
+           "name": "Dumbbell High Rows Pulses",
+           "video": "1iFkUoBaxuc",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/1iFkUoBaxuc-pdf.webp",
+           "row": "High Row",
+           "startPhoto": "images/1iFkUoBaxuc-start.webp",
+           "endPhoto": "images/1iFkUoBaxuc-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 25,
+       "n": 8
+      },
+      {
+       "id": "flf-1-home-d2",
+       "day": 2,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Lateral Raises Pulses",
+           "video": "A7g06iUnhT8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/A7g06iUnhT8-pdf.webp",
+           "row": "Lateral Raise",
+           "startPhoto": "images/A7g06iUnhT8-start.webp",
+           "endPhoto": "images/A7g06iUnhT8-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Dumbbell Shoulder Press Pulses",
+           "video": "7FcLkHdf4Js",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/7FcLkHdf4Js-pdf.webp",
+           "row": "Shoulder Press",
+           "startPhoto": "images/7FcLkHdf4Js-start.webp",
+           "endPhoto": "images/7FcLkHdf4Js-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Dips",
+           "video": "JLHJ0Aho904",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/JLHJ0Aho904-pdf.webp",
+           "row": "Dips",
+           "startPhoto": "images/JLHJ0Aho904-start.webp",
+           "endPhoto": "images/JLHJ0Aho904-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Rope Pulldown Pulses",
+           "video": "wwU92nSlVAQ",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "homeName": "Tricep Kickbacks",
+           "homeVideo": "KkkI5a-bxGs",
+           "photo": "images/wwU92nSlVAQ-pdf.webp",
+           "row": "Rope Pulldown",
+           "homeRow": "Kickback",
+           "startPhoto": "images/wwU92nSlVAQ-start.webp",
+           "endPhoto": "images/wwU92nSlVAQ-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Dumbbell Bicep Curl Pulses",
+           "video": "SBhNJN_FLAQ",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/SBhNJN_FLAQ-pdf.webp",
+           "row": "DB Curl",
+           "startPhoto": "images/SBhNJN_FLAQ-start.webp",
+           "endPhoto": "images/SBhNJN_FLAQ-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Dumbbell Hammer Curl Pulses",
+           "video": "0xCuPSAZ-dk",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "homeName": "Twisting Curls",
+           "homeVideo": "uJVuwBsgka0",
+           "photo": "images/0xCuPSAZ-dk-pdf.webp",
+           "row": "Hammer Curl",
+           "homeRow": "Incline Curl",
+           "startPhoto": "images/0xCuPSAZ-dk-start.webp",
+           "endPhoto": "images/0xCuPSAZ-dk-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Stability Ball Skiers",
+           "video": "VAT6fUedIl8",
+           "reps": "20",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "",
+           "photo": "images/VAT6fUedIl8-pdf.webp",
+           "row": "Skiers"
+          },
+          {
+           "code": "D2",
+           "name": "Stability Ball Rollouts",
+           "video": "eYooXUnnw44",
+           "reps": "20-60s",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "",
+           "note": "And Hold 60s",
+           "photo": "images/eYooXUnnw44-pdf.webp",
+           "row": "Stability Ball Rollout",
+           "startPhoto": "images/eYooXUnnw44-start.webp",
+           "endPhoto": "images/eYooXUnnw44-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 30,
+       "n": 8
+      },
+      {
+       "id": "flf-1-home-d3",
+       "day": 3,
+       "blocks": [
+        {
+         "label": "A",
+         "exercises": [
+          {
+           "code": "A1",
+           "name": "Plie Squats Pulses",
+           "video": "yf5izTNXw_k",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "photo": "images/yf5izTNXw_k-pdf.webp",
+           "row": "Plie Squat",
+           "startPhoto": "images/yf5izTNXw_k-start.webp",
+           "endPhoto": "images/yf5izTNXw_k-end.webp"
+          },
+          {
+           "code": "A2",
+           "name": "Reverse Lunges Pulses",
+           "video": "gqXModadJgw",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/gqXModadJgw-pdf.webp",
+           "row": "Reverse Lunge",
+           "startPhoto": "images/gqXModadJgw-start.webp",
+           "endPhoto": "images/gqXModadJgw-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "B",
+         "exercises": [
+          {
+           "code": "B1",
+           "name": "Dumbbell Presses Pulses",
+           "video": "1tVuREPeiw8",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "homeName": "Dumbbell Chest Press",
+           "homeVideo": "jU65WRZ1GNo",
+           "photo": "images/1tVuREPeiw8-pdf.webp",
+           "row": "Dumbbell Press",
+           "homeRow": "Dumbbell Press",
+           "startPhoto": "images/1tVuREPeiw8-start.webp",
+           "endPhoto": "images/1tVuREPeiw8-end.webp"
+          },
+          {
+           "code": "B2",
+           "name": "Pushups Pulses",
+           "video": "V1T3CrnqkFE",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/V1T3CrnqkFE-pdf.webp",
+           "row": "Push-Up",
+           "startPhoto": "images/V1T3CrnqkFE-start.webp",
+           "endPhoto": "images/V1T3CrnqkFE-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "C",
+         "exercises": [
+          {
+           "code": "C1",
+           "name": "Lying Leg Curl Pulses",
+           "video": "85kdyJiaaeY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "homeName": "Stability Ball Leg Curls",
+           "homeVideo": "8NiUg6uVyEU",
+           "photo": "images/85kdyJiaaeY-pdf.webp",
+           "row": "Stability Ball Leg Curl",
+           "homeRow": "Stability Ball Leg Curl",
+           "startPhoto": "images/85kdyJiaaeY-start.webp",
+           "endPhoto": "images/85kdyJiaaeY-end.webp"
+          },
+          {
+           "code": "C2",
+           "name": "Supine Stability Ball Hip Extensions Pulses",
+           "video": "sUp-h2ZY_IY",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/sUp-h2ZY_IY-pdf.webp",
+           "row": "Stability Ball Hip Extension",
+           "startPhoto": "images/sUp-h2ZY_IY-start.webp",
+           "endPhoto": "images/sUp-h2ZY_IY-end.webp"
+          }
+         ]
+        },
+        {
+         "label": "D",
+         "exercises": [
+          {
+           "code": "D1",
+           "name": "Cable High Rows Pulses",
+           "video": "Iugcoan3xt4",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 0,
+           "tempo": "201-101",
+           "homeName": "Dumbbell High Rows",
+           "homeVideo": "1iFkUoBaxuc",
+           "photo": "images/Iugcoan3xt4-pdf.webp",
+           "row": "High Row",
+           "homeRow": "High Row",
+           "startPhoto": "images/Iugcoan3xt4-start.webp",
+           "endPhoto": "images/Iugcoan3xt4-end.webp"
+          },
+          {
+           "code": "D2",
+           "name": "Bent Over Dumbbell Rows Pulses",
+           "video": "MSpzYNZ_BFw",
+           "reps": "20-30",
+           "sets": 2,
+           "restSeconds": 30,
+           "tempo": "201-101",
+           "photo": "images/MSpzYNZ_BFw-pdf.webp",
+           "row": "Bent-Over Row",
+           "startPhoto": "images/MSpzYNZ_BFw-start.webp",
+           "endPhoto": "images/MSpzYNZ_BFw-end.webp"
+          }
+         ]
+        }
+       ],
+       "minutes": 25,
+       "n": 8
+      }
+     ],
+     "number": 1,
+     "name": "Foundation 1 \u00b7 Home",
+     "base": "flf-1"
+    }
+   ]
+  }
+ ],
+ "reset": {
+  "id": "reset",
+  "step": 5,
+  "name": "Reset & Supercompensation",
+  "short": "Reset",
+  "tag": "Recover. Climb again.",
+  "reps": "20-30 reps, light",
+  "load": "Light. Then return to Step 1.",
+  "restNote": "",
+  "quote": "Circle back stronger.",
+  "outcomes": "Recover and refresh \u00b7 Shock your body \u00b7 Accelerate results",
+  "about": "Lower volume: 2 or 3 sets, light weight, or a full-body Foundation day. Then start the climb again at Step 1. Phase 5 is where the results from the last 3 months show up."
+ },
+ "swaps": {
+  "Squat": {
+   "group": "Squat",
+   "muscles": "Quads, Glutes",
+   "equipment": "DB / BW",
+   "variations": [
+    "Goblet Squat",
+    "Box Squat",
+    "Heel-Elevated Squat",
+    "Plie Squat",
+    "Wall Sit",
+    "Jump Squat"
+   ],
+   "home": "Bodyweight Squat to Chair",
+   "gym": "Leg Press / Smith Machine Squat"
+  },
+  "Front Squat": {
+   "group": "Squat",
+   "muscles": "Quads",
+   "equipment": "DB / Bar",
+   "variations": [
+    "Goblet Squat",
+    "Heels Elevated",
+    "Smith Front"
+   ],
+   "home": "DB Front Squat",
+   "gym": "Barbell Front Squat"
+  },
+  "Step-Up": {
+   "group": "Squat",
+   "muscles": "Glutes, Quads",
+   "equipment": "DB / BW",
+   "variations": [
+    "Reverse Lunge",
+    "Walking Lunge",
+    "Explosive Step-Up",
+    "Bench Step-Up"
+   ],
+   "home": "Stair Step-Up",
+   "gym": "Weighted Step-Up"
+  },
+  "Split Squat": {
+   "group": "Squat",
+   "muscles": "Quads, Glutes",
+   "equipment": "DB / BW",
+   "variations": [
+    "Bulgarian Split",
+    "Front-Foot Elevated",
+    "Pistol Assist"
+   ],
+   "home": "Chair Tap Squat",
+   "gym": "Smith Split Squat"
+  },
+  "Plie Squat": {
+   "group": "Squat",
+   "muscles": "Inner Thigh, Glutes",
+   "equipment": "DB / BW",
+   "variations": [
+    "Wide Squat",
+    "Sumo",
+    "Plie Leg Press"
+   ],
+   "home": "Wide BW Squat",
+   "gym": "Plie Leg Press"
+  },
+  "Jump Squat": {
+   "group": "Squat",
+   "muscles": "Quads, Glutes, Calves",
+   "equipment": "BW",
+   "variations": [
+    "Bodyweight Squat",
+    "Jump Lunge"
+   ],
+   "home": "Squat Pulse",
+   "gym": "Smith Speed Squat"
+  },
+  "Stationary Lunge": {
+   "group": "Lunge",
+   "muscles": "Quads, Glutes",
+   "equipment": "DB / BW",
+   "variations": [
+    "Reverse",
+    "Walking",
+    "Curtsy"
+   ],
+   "home": "Reverse BW Lunge",
+   "gym": "Barbell Lunge"
+  },
+  "Reverse Lunge": {
+   "group": "Lunge",
+   "muscles": "Glutes, Hams",
+   "equipment": "DB / BW",
+   "variations": [
+    "Step-Up",
+    "Split Squat",
+    "Curtsy"
+   ],
+   "home": "Reverse BW Lunge",
+   "gym": "Cable Reverse Lunge"
+  },
+  "Lateral Lunge": {
+   "group": "Lunge",
+   "muscles": "Adductors, Glutes",
+   "equipment": "DB / BW",
+   "variations": [
+    "Side Step",
+    "Cossack"
+   ],
+   "home": "BW Side Lunge",
+   "gym": "Smith Cossack"
+  },
+  "Curtsy Lunge": {
+   "group": "Lunge",
+   "muscles": "Glute Med, Quads",
+   "equipment": "DB / Cable",
+   "variations": [
+    "Reverse",
+    "Cable Glute Cross"
+   ],
+   "home": "BW Curtsy",
+   "gym": "Cable Kickback Cross"
+  },
+  "Deadlift": {
+   "group": "Hinge / Posterior Chain",
+   "muscles": "Hams, Glutes",
+   "equipment": "DB / Barbell",
+   "variations": [
+    "RDL",
+    "Sumo",
+    "Good Morning",
+    "Single-Leg RDL"
+   ],
+   "home": "SL RDL BW",
+   "gym": "Barbell RDL"
+  },
+  "Hip Thrust": {
+   "group": "Hinge / Posterior Chain",
+   "muscles": "Glutes, Hams",
+   "equipment": "BW / Band / Ball",
+   "variations": [
+    "Glute Bridge",
+    "Banded Bridge",
+    "Frog Pump",
+    "Stability Ball Bridge"
+   ],
+   "home": "Floor Bridge",
+   "gym": "Barbell Hip Thrust"
+  },
+  "Stability Ball Leg Curl": {
+   "group": "Hinge / Posterior Chain",
+   "muscles": "Hams",
+   "equipment": "Ball / Towel / Machine",
+   "variations": [
+    "Towel Ham Curl",
+    "Hamstring Slide",
+    "Seated Ham Curl"
+   ],
+   "home": "Towel Ham Curl",
+   "gym": "Seated Ham Curl"
+  },
+  "Good Morning": {
+   "group": "Hinge / Posterior Chain",
+   "muscles": "Hams, Erectors",
+   "equipment": "Bar / Cable",
+   "variations": [
+    "Cable Pull-Through",
+    "RDL"
+   ],
+   "home": "Banded Hinge",
+   "gym": "Cable Pull-Through"
+  },
+  "Stability Ball Hip Extension": {
+   "group": "Hinge / Posterior Chain",
+   "muscles": "Glutes",
+   "equipment": "Ball / BW",
+   "variations": [
+    "SL Bridge",
+    "Kickback",
+    "Frog Pump"
+   ],
+   "home": "Single-Leg Bridge",
+   "gym": "Back Extension Machine"
+  },
+  "Incline DB Press": {
+   "group": "Push \u00b7 Horizontal",
+   "muscles": "Chest, Shoulders, Triceps",
+   "equipment": "DB / BW / Machine",
+   "variations": [
+    "Flat DB Press",
+    "Decline",
+    "Push-Up"
+   ],
+   "home": "Elevated Push-Up",
+   "gym": "Incline Chest Press Machine"
+  },
+  "Decline DB Press": {
+   "group": "Push \u00b7 Horizontal",
+   "muscles": "Chest",
+   "equipment": "DB / BW",
+   "variations": [
+    "Flat",
+    "Incline",
+    "Push-Up Decline"
+   ],
+   "home": "Decline Push-Up",
+   "gym": "Decline Machine Press"
+  },
+  "Push-Up": {
+   "group": "Push \u00b7 Horizontal",
+   "muscles": "Chest, Triceps",
+   "equipment": "BW / Band",
+   "variations": [
+    "Knee",
+    "Bench",
+    "Band-Resisted",
+    "Tempo Hold"
+   ],
+   "home": "Incline Push-Up",
+   "gym": "Weighted Push-Up"
+  },
+  "Cable Fly": {
+   "group": "Push \u00b7 Horizontal",
+   "muscles": "Chest",
+   "equipment": "Cable / Band / DB",
+   "variations": [
+    "DB Fly",
+    "Band Fly",
+    "Stability Ball Fly"
+   ],
+   "home": "Band Fly",
+   "gym": "Pec Deck"
+  },
+  "Dumbbell Press": {
+   "group": "Push \u00b7 Horizontal",
+   "muscles": "Chest / Shoulders",
+   "equipment": "DB",
+   "variations": [
+    "Neutral Grip",
+    "Tempo Press",
+    "Stability Ball Press"
+   ],
+   "home": "Push-Up",
+   "gym": "Machine Chest Press"
+  },
+  "Shoulder Press": {
+   "group": "Push \u00b7 Vertical",
+   "muscles": "Delts, Triceps",
+   "equipment": "DB / Barbell",
+   "variations": [
+    "Arnold",
+    "Neutral Grip",
+    "Seated",
+    "Barbell"
+   ],
+   "home": "Band Overhead Press",
+   "gym": "Machine Shoulder Press"
+  },
+  "Upright Row": {
+   "group": "Push \u00b7 Vertical",
+   "muscles": "Delts, Traps",
+   "equipment": "DB / Band / Cable",
+   "variations": [
+    "High Pull",
+    "Band Upright",
+    "Cable Upright"
+   ],
+   "home": "Band Upright Row",
+   "gym": "Smith Upright Row"
+  },
+  "Lateral Raise": {
+   "group": "Push \u00b7 Vertical",
+   "muscles": "Medial Delts",
+   "equipment": "DB / Band",
+   "variations": [
+    "45\u00b0 Raise",
+    "Cable",
+    "Bent-Arm"
+   ],
+   "home": "Band Lateral Raise",
+   "gym": "Cable Lateral Raise"
+  },
+  "Front Raise": {
+   "group": "Push \u00b7 Vertical",
+   "muscles": "Front Delts",
+   "equipment": "DB / Plate",
+   "variations": [
+    "Plate",
+    "DB Alt",
+    "Band"
+   ],
+   "home": "Band Front",
+   "gym": "Cable Front"
+  },
+  "Arnold Press": {
+   "group": "Push \u00b7 Vertical",
+   "muscles": "Delts",
+   "equipment": "DB",
+   "variations": [
+    "DB Shoulder Press",
+    "Standing Press"
+   ],
+   "home": "Band Press",
+   "gym": "Machine Press"
+  },
+  "Lat Pulldown": {
+   "group": "Pull \u00b7 Vertical",
+   "muscles": "Lats, Biceps",
+   "equipment": "Cable / Band",
+   "variations": [
+    "Underhand",
+    "Wide",
+    "Band",
+    "Assisted Pull-Up"
+   ],
+   "home": "Band Pulldown",
+   "gym": "Pull-Up Machine"
+  },
+  "Straight-Arm Pulldown": {
+   "group": "Pull \u00b7 Vertical",
+   "muscles": "Lats",
+   "equipment": "Cable / Band",
+   "variations": [
+    "Band Pulldown",
+    "Cable Pullover"
+   ],
+   "home": "Band Pulldown",
+   "gym": "Cable Pullover"
+  },
+  "Pull-Up": {
+   "group": "Pull \u00b7 Vertical",
+   "muscles": "Lats, Biceps",
+   "equipment": "BW / Band",
+   "variations": [
+    "Assisted",
+    "Negative",
+    "Jump + Hold"
+   ],
+   "home": "Band Pulldown",
+   "gym": "Machine Assisted Pull-Up"
+  },
+  "Cable Row": {
+   "group": "Pull \u00b7 Horizontal",
+   "muscles": "Lats, Rhomboids",
+   "equipment": "Cable / Band / DB",
+   "variations": [
+    "Seated",
+    "Standing",
+    "Band",
+    "DB"
+   ],
+   "home": "Band Row",
+   "gym": "Seated Row Machine"
+  },
+  "Bent-Over Row": {
+   "group": "Pull \u00b7 Horizontal",
+   "muscles": "Lats, Rear Delts",
+   "equipment": "DB / Bar / BW",
+   "variations": [
+    "DB",
+    "Barbell",
+    "Inverted",
+    "TRX"
+   ],
+   "home": "Band Row",
+   "gym": "T-Bar Row"
+  },
+  "High Row": {
+   "group": "Pull \u00b7 Horizontal",
+   "muscles": "Rear Delts, Lats",
+   "equipment": "Cable / DB",
+   "variations": [
+    "Face Pull",
+    "Reverse Fly"
+   ],
+   "home": "Band Face Pull",
+   "gym": "Cable High Row"
+  },
+  "Single Arm DB Row": {
+   "group": "Pull \u00b7 Horizontal",
+   "muscles": "Lats",
+   "equipment": "DB / Cable",
+   "variations": [
+    "Supported",
+    "Unsupported",
+    "Cable"
+   ],
+   "home": "Band Row",
+   "gym": "Machine Row"
+  },
+  "DB Curl": {
+   "group": "Biceps",
+   "muscles": "Biceps",
+   "equipment": "DB / Cable",
+   "variations": [
+    "Hammer",
+    "Twisting",
+    "Supine Incline",
+    "Concentration"
+   ],
+   "home": "Band Curl",
+   "gym": "Cable Curl"
+  },
+  "Hammer Curl": {
+   "group": "Biceps",
+   "muscles": "Biceps Brachialis",
+   "equipment": "DB / Cable",
+   "variations": [
+    "Rope",
+    "Neutral",
+    "Incline"
+   ],
+   "home": "Band Hammer Curl",
+   "gym": "Rope Curl"
+  },
+  "Barbell Curl": {
+   "group": "Biceps",
+   "muscles": "Biceps",
+   "equipment": "Bar / Band",
+   "variations": [
+    "EZ Bar",
+    "Reverse",
+    "Band"
+   ],
+   "home": "Band Curl",
+   "gym": "Cable Curl"
+  },
+  "Incline Curl": {
+   "group": "Biceps",
+   "muscles": "Biceps",
+   "equipment": "DB",
+   "variations": [
+    "Twisting",
+    "Lying",
+    "Concentration"
+   ],
+   "home": "Band Curl",
+   "gym": "Cable Incline Curl"
+  },
+  "Rope Pulldown": {
+   "group": "Triceps",
+   "muscles": "Triceps",
+   "equipment": "Cable / Band",
+   "variations": [
+    "Overhead",
+    "Kickback",
+    "Underhand Pushdown"
+   ],
+   "home": "Band Pushdown",
+   "gym": "Rope Pushdown"
+  },
+  "Skull Crusher": {
+   "group": "Triceps",
+   "muscles": "Triceps",
+   "equipment": "DB / Barbell",
+   "variations": [
+    "Overhead Ext",
+    "Close Grip Press",
+    "Kickback"
+   ],
+   "home": "Band Overhead Ext",
+   "gym": "Cable Pushdown"
+  },
+  "Overhead Extension": {
+   "group": "Triceps",
+   "muscles": "Triceps",
+   "equipment": "Cable / DB / Band",
+   "variations": [
+    "Rope",
+    "DB",
+    "Band Ext",
+    "Kickback"
+   ],
+   "home": "Band Overhead",
+   "gym": "Rope Ext"
+  },
+  "Kickback": {
+   "group": "Triceps",
+   "muscles": "Triceps",
+   "equipment": "DB / Band",
+   "variations": [
+    "Band Kickback",
+    "Overhead Ext",
+    "Rope Pushdown"
+   ],
+   "home": "Band Kickback",
+   "gym": "Rope Pushdown"
+  },
+  "Dips": {
+   "group": "Triceps",
+   "muscles": "Triceps, Chest",
+   "equipment": "BW / Bench",
+   "variations": [
+    "Bench Dip",
+    "Tricep Push-Up",
+    "Chair Dip"
+   ],
+   "home": "Chair Dip",
+   "gym": "Assisted Dip Machine"
+  },
+  "Plank": {
+   "group": "Core / Abs",
+   "muscles": "Core, TA",
+   "equipment": "BW",
+   "variations": [
+    "Forearm",
+    "Side",
+    "Arm Walk",
+    "Hip Dips",
+    "1-Arm-1-Leg",
+    "Elevated"
+   ],
+   "home": "Elbow Plank",
+   "gym": "Cable Anti-Rotation"
+  },
+  "Jackknife": {
+   "group": "Core / Abs",
+   "muscles": "Lower Abs",
+   "equipment": "BW",
+   "variations": [
+    "V-Up",
+    "Reverse Crunch",
+    "Toe Reach"
+   ],
+   "home": "Floor Jackknife",
+   "gym": "Cable Crunch"
+  },
+  "Reverse Crunch": {
+   "group": "Core / Abs",
+   "muscles": "Lower Abs",
+   "equipment": "BW",
+   "variations": [
+    "Leg Raise",
+    "Bent-Knee",
+    "Weighted"
+   ],
+   "home": "Lying Leg Raise",
+   "gym": "Hanging Leg Raise"
+  },
+  "Stability Ball Rollout": {
+   "group": "Core / Abs",
+   "muscles": "Core",
+   "equipment": "Ball / BW / Cable",
+   "variations": [
+    "Ab Wheel",
+    "Wall Walk",
+    "SB Transfer",
+    "Cable Rollout"
+   ],
+   "home": "Towel Rollout",
+   "gym": "Cable Rollout"
+  },
+  "Side Plank": {
+   "group": "Core / Abs",
+   "muscles": "Obliques, TA",
+   "equipment": "BW",
+   "variations": [
+    "Starfish",
+    "Modified Side",
+    "Hip Lift"
+   ],
+   "home": "Side Plank on Knee",
+   "gym": "Cable Oblique Hold"
+  },
+  "Woodchop": {
+   "group": "Core / Abs",
+   "muscles": "Obliques",
+   "equipment": "Cable / BW",
+   "variations": [
+    "Cable Twist",
+    "Reverse Oblique Crunch"
+   ],
+   "home": "Standing Twist",
+   "gym": "Cable Woodchop"
+  },
+  "Hanging Leg Raise": {
+   "group": "Core / Abs",
+   "muscles": "Lower Abs",
+   "equipment": "BW",
+   "variations": [
+    "Reverse Crunch",
+    "Stability Ball Pike"
+   ],
+   "home": "Reverse Crunch",
+   "gym": "Hanging Leg Raise"
+  },
+  "Around the World": {
+   "group": "Core / Abs",
+   "muscles": "Shoulders + Core",
+   "equipment": "Plate / DB",
+   "variations": [
+    "Front Raise Circle",
+    "Plate Halo"
+   ],
+   "home": "Band Halo",
+   "gym": "Cable Halo"
+  },
+  "Stability Ball Abductions": {
+   "group": "Core / Abs",
+   "muscles": "Glutes + Core",
+   "equipment": "Ball / BW",
+   "variations": [
+    "Glute Bridge March",
+    "Side Step Band"
+   ],
+   "home": "Bridge March",
+   "gym": "Abduction Machine"
+  },
+  "Decline Roll-Down": {
+   "group": "Core / Abs",
+   "muscles": "Core",
+   "equipment": "BW",
+   "variations": [
+    "TA Crunch",
+    "Partial Sit-Up"
+   ],
+   "home": "TA Crunch",
+   "gym": "Cable Crunch"
+  },
+  "Stability Ball Extend & Crunch": {
+   "group": "Core / Abs",
+   "muscles": "Abs",
+   "equipment": "Ball / BW",
+   "variations": [
+    "Crunch Hold",
+    "Deadbug",
+    "TA Breathing"
+   ],
+   "home": "Crunch Hold",
+   "gym": "Cable Crunch"
+  },
+  "Scoop with Slides": {
+   "group": "Core / Abs",
+   "muscles": "Core, TA",
+   "equipment": "Slide / BW",
+   "variations": [
+    "Arm & Leg Slide",
+    "Body Saw"
+   ],
+   "home": "Floor Slide",
+   "gym": "Cable Reach"
+  },
+  "Skiers": {
+   "group": "Core / Abs",
+   "muscles": "Glutes, Core",
+   "equipment": "BW",
+   "variations": [
+    "Mountain Climber",
+    "Jump Lunge"
+   ],
+   "home": "Modified Mountain Climber",
+   "gym": "Smith Jump Lunge"
+  },
+  "Arm Walks": {
+   "group": "Core / Abs",
+   "muscles": "Core + Shoulders",
+   "equipment": "BW",
+   "variations": [
+    "Shoulder Taps",
+    "Push-Up + Walkout"
+   ],
+   "home": "Shoulder Taps",
+   "gym": "Renegade Row Walkout"
+  }
+ },
+ "pairs": [
+  "0xCuPSAZ-dk",
+  "1cfPOgUUZ5E",
+  "1iFkUoBaxuc",
+  "1tVuREPeiw8",
+  "7FcLkHdf4Js",
+  "85kdyJiaaeY",
+  "8NiUg6uVyEU",
+  "9nemn317XXE",
+  "A7g06iUnhT8",
+  "Iugcoan3xt4",
+  "JLHJ0Aho904",
+  "KNh82NqLIzc",
+  "KkkI5a-bxGs",
+  "MSpzYNZ_BFw",
+  "NZJ6Ppp6ejY",
+  "SBhNJN_FLAQ",
+  "V1T3CrnqkFE",
+  "eYooXUnnw44",
+  "gqXModadJgw",
+  "jU65WRZ1GNo",
+  "sUp-h2ZY_IY",
+  "swvfEyxv4YM",
+  "uJVuwBsgka0",
+  "wwU92nSlVAQ",
+  "yf5izTNXw_k"
+ ]
+}

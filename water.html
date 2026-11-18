@@ -1,0 +1,55 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Water · The Holiday Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7a4f5a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Holiday Challenge">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vault.css">
+<style>
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.field{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--muted)}
+.field input{width:100%;font-size:18px;font-weight:600;color:var(--ink)}
+.big{font:700 54px/1 var(--display);color:var(--brand);text-align:center}
+.jugs{display:flex;flex-wrap:wrap;gap:8px}
+.jugs button{border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:12px 14px;font-weight:600;min-width:84px}
+.jugs button.on{background:var(--done-soft);border-color:var(--done);color:var(--done)}
+</style>
+<div class="wrap">
+  <header class="page"><a class="back" href="start.html">← Home</a><span class="eyebrow">The Holiday Challenge</span><h1>Water</h1><p class="lead">Half your body weight in pounds, in ounces, every day. Give it a number of refills and it stops being "drink more water".</p></header>
+  <section class="card">
+    <h3>Your number</h3>
+    <div class="two"><label class="field">Your weight (lb)<input type="number" id="wt" min="80" max="350" inputmode="numeric"></label><label class="field">Your cup or bottle (oz)<input type="number" id="jug" min="8" max="64" inputmode="numeric"></label></div>
+    <div id="goal"></div>
+  </section>
+  <section class="card">
+    <h3>Today</h3>
+    <div class="jugs" id="jugs"></div>
+    <p class="note">Tap one each time you finish it. Hit the number and the water rule ticks itself on the home page. Get a refillable one that isn't plastic.</p>
+  </section>
+  <section class="card">
+    <h3>The lemon water</h3>
+    <p>First thing, before coffee: warm water with half a lemon squeezed in. That one counts toward the number too.</p>
+  </section>
+</div>
+<script src="vault.js"></script>
+<script>
+const g=goal()||{};
+const S=store.get('hc:hyd',{wt:g.wt||'',jug:20});$('#wt').value=S.wt||g.wt||'';$('#jug').value=S.jug||20;
+const dayKey='hc:hyd:'+TODAY;
+function render(){const wt=+$('#wt').value||0,jug=+$('#jug').value||20;store.set('hc:hyd',{wt,jug});
+  const oz=wt?Math.round(wt/2):0;const jugs=oz?Math.ceil(oz/jug*2)/2:0;
+  $('#goal').innerHTML=oz?`<div class="big">${oz} oz</div><p style="text-align:center"><b>${jugs} × ${jug} oz</b> a day</p>`:'<p class="note">Type your weight and the number appears.</p>';
+  const d=store.get(dayKey,{});const n=d.jugs||0;const total=Math.ceil(jugs)||0;
+  $('#jugs').innerHTML=total?Array.from({length:total},(_,i)=>`<button class="${i<n?'on':''}" data-jug="${i+1}">${i<n?'✓ ':''}${i+1}</button>`).join('')+(n>=jugs?'<span class="chip gold">Goal hit ✓</span>':''):'';
+  setRule(TODAY,'water',jugs>0&&n>=jugs);
+}
+document.addEventListener('input',e=>{if(e.target.id==='wt'||e.target.id==='jug')render()});
+document.addEventListener('click',e=>{const b=e.target.closest('button[data-jug]');if(!b)return;const d=store.get(dayKey,{});const k=+b.dataset.jug;d.jugs=(d.jugs||0)>=k?k-1:k;store.set(dayKey,d);render()});
+render();
+</script>

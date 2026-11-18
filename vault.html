@@ -1,0 +1,44 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Toning Vault · The Holiday Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7a4f5a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Holiday Challenge">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vault.css">
+<style>
+.rung{grid-template-columns:36px 1fr}
+.rung.now{border-color:var(--gold);background:var(--gold-soft)}
+.rung.now .num{color:var(--gold)}
+.q{font:700 24px/1.2 var(--display);color:var(--brand)}
+</style>
+<div class="wrap">
+  <header class="page"><a class="back" href="start.html">← Home</a><span class="eyebrow">What this challenge is a taste of</span><h1>The Toning Vault</h1><p class="lead">For women 35 and up whose body stopped responding. Your workouts didn't change. Your hormones did. The Vault is the anti-adaptation system Michelle used with clients for 25 years.</p></header>
+
+  <section class="card">
+    <h3>The Toning Ladder</h3>
+    <p>Five steps, four weeks each. The weight goes up, the reps come down, and every step your body has to adapt again. You just did Step 1.</p>
+    <div class="ladder">
+      <div class="rung now"><div class="num">1</div><div><b>Fat Loss Foundation</b><small>Wake the body up · 20-30 reps · this challenge workout</small></div></div>
+      <div class="rung"><div class="num">2</div><div><b>Toning Transformation</b><small>Sculpt and shape · 20 reps · 4 workouts</small></div></div>
+      <div class="rung"><div class="num">3</div><div><b>Muscle Leaning</b><small>Build the burn · 12-15 reps · 5 workouts</small></div></div>
+      <div class="rung"><div class="num">4</div><div><b>Muscle Building</b><small>Get strong · pyramids and drop sets · 5 workouts</small></div></div>
+      <div class="rung"><div class="num">5</div><div><b>Reset</b><small>Recover, then climb again, stronger</small></div></div>
+    </div>
+  </section>
+  <section class="card">
+    <h3>Same app, all of it</h3>
+    <p>The Vault player looks exactly like this one. Every workout with photos and video, a calendar that tells you what to do today, the Ladder that tracks itself, a Spice Rack to season a workout when you plateau, swaps for any exercise, and a weekly journal.</p>
+    <p>16 workouts, 48 workout days, gym and home versions. A library you come back to for years.</p>
+  </section>
+  <section class="card soft"><p class="q">“This isn't the army. You don't have to follow it to the letter to get results. The goal is consistency, not perfection.”</p></section>
+  <a class="go gold" id="cta" href="https://www.fitmoms4life.com/the-toning-vault" target="_blank" rel="noopener">See the Toning Vault →</a>
+  <p class="note" style="text-align:center">Opens Michelle's page in your browser.</p>
+</div>
+<script src="vault.js"></script>
+<script>document.getElementById('cta').href=SALE_URL;</script>
