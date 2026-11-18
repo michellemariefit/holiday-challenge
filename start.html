@@ -47,11 +47,11 @@
   <section id="week"></section>
   <h2 class="also">Everything else</h2>
   <section class="ways">
-    <a class="way" href="index.html#all"><span class="ic">W</span><span><b>The workout</b><small>Foundation 1, Day 1, 2 and 3. Play, List or Print. Gym or home.</small></span></a>
+    <a class="way" href="index.html#all"><span class="ic">W</span><span><b>The workout</b><small>Toning 3, Day 1, 2 and 3. Play, List or Print. Gym or home.</small></span></a>
     <a class="way" href="week.html"><span class="ic">7</span><span><b>This week</b><small>Three weight days, three Zone 2 cardio days. Log cardio here.</small></span></a>
     <a class="way" href="water.html"><span class="ic">H</span><span><b>Water</b><small>Your number, your jugs. Tap one each time you finish.</small></span></a>
     <a class="way" href="rules.html"><span class="ic">R</span><span><b>The rules, explained</b><small>Michelle's notes on carbs, protein, eating out and fats.</small></span></a>
-    <a class="way" href="vault.html"><span class="ic gold">✦</span><span><b>The Toning Vault</b><small>This workout is Step 1 of 5. Here's the rest.</small></span></a>
+    <a class="way" href="vault.html"><span class="ic gold">✦</span><span><b>The Toning Vault</b><small>This workout is from Step 2 of 5. Here's the rest.</small></span></a>
   </section>
   <section class="card soft">
     <h3>Put it on your home screen</h3>
@@ -85,7 +85,7 @@ function render(){
   const mon=monday(new Date()), w=doneInWeek(mon).length, c=cardioInWeek(mon).length;
   const nd=nextDay(D,g.place||'gym'), doneToday=doneOn(TODAY).length, cToday=cardioLog().filter(x=>x.d===TODAY).length;
   $('#week').innerHTML=`<div class="two"><div class="stat ${w>=3?'full':''}"><b>${w}/3</b><small>weight workouts this week</small></div><div class="stat ${c>=3?'full':''}"><b>${c}/3</b><small>Zone 2 cardio this week</small></div></div>
-    <div class="card">${doneToday?`<h3>Workout done today ✓</h3><p>${esc(doneOn(TODAY).map(x=>x.name).join(', '))}. ${cToday?'Cardio logged too. Rest up.':'Add 20 to 30 minutes of Zone 2 cardio after it if you have it in you, or tomorrow.'}</p>`:`<h3>Next up: ${esc(nd.workout?'' : '')}Foundation 1 · Day ${nd.day}</h3><p>${nd.n} exercises, about ${nd.minutes} minutes. Three a week, in order. Cardio goes after it or on its own day.</p><a class="go" href="play.html#${nd.id}">▶ Play Day ${nd.day}</a>`}
+    <div class="card">${doneToday?`<h3>Workout done today ✓</h3><p>${esc(doneOn(TODAY).map(x=>x.name).join(', '))}. ${cToday?'Cardio logged too. Rest up.':'Add 20 to 30 minutes of Zone 2 cardio after it if you have it in you, or tomorrow.'}</p>`:`<h3>Next up: Toning 3 · Day ${nd.day}</h3><p>${nd.n} exercises, about ${nd.minutes} minutes. Three a week, in order. Cardio goes after it or on its own day.</p><a class="go" href="play.html#${nd.id}">▶ Play Day ${nd.day}</a>`}
     <div class="toolrow"><a class="pill" href="index.html#${nd.id}">List view</a><a class="pill" href="week.html">Log cardio</a><a class="pill" href="water.html">Water</a></div></div>`;
 }
 document.addEventListener('click',e=>{

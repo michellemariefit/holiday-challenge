@@ -110,11 +110,11 @@ function renderAll(){
   $('#phasePick').innerHTML='';$('#workoutPick').innerHTML='';$('#dayPick').innerHTML='';$('#howto').innerHTML='';
   $('#title').textContent='All workouts';
   const pl=place();
-  $('#intro').innerHTML=`<div class="intro"><p class="note">One full-body workout, three days. Do Day 1, 2 and 3 each week, in order, for the whole challenge. This is Step 1 of the Toning Vault's Ladder; the Vault has the other four steps.</p>
+  $('#intro').innerHTML=`<div class="intro"><p class="note">One workout, three days. Do Day 1, 2 and 3 each week, in order, for the whole challenge. It's from Step 2 of the Toning Vault's Ladder; the Vault has the other 15 workouts.</p>
     <div class="toolrow"><span class="seg"><button data-place="gym" aria-pressed="${pl==='gym'}">Gym</button><button data-place="home" aria-pressed="${pl==='home'}">Home</button></span><a class="pill" href="print.html">🖨 Print</a></div></div>`;
   $('#workout').innerHTML=`<div class="alllist">${D.phases.map(p=>`<div class="ph"><span class="eyebrow">Step ${p.step} · ${esc(p.tag)}</span><h2>${esc(p.name)}</h2><p class="note">${esc(p.reps)} · ${esc(p.load)}</p>
     <div class="ws">${p.workouts.filter(w=>!w.home).map(w=>{const pw=placed(D,w,pl);return `<div class="w"><b>${esc(w.name)}${pw.id!==w.id?' <span class="sub" style="font-weight:400;color:var(--muted)">home</span>':''}</b><span class="days">${pw.days.map(d=>`<a href="index.html#${d.id}" class="${store.get('hc:day:'+d.id,{}).finished?'done':''}">Day ${d.day}</a>`).join('')}</span></div>`}).join('')}</div></div>`).join('')}
-    <div class="ph"><span class="eyebrow">Want the other 15 workouts?</span><h2>The Toning Vault</h2><p class="note">Four phases that climb in weight and drop in reps, so your body never adapts. This challenge workout is Step 1.</p><a class="go gold" href="vault.html">See the Toning Vault →</a></div></div>`;
+    ${CTA_HTML}</div>`;
 }
 function render(){
   if(state.lock==='all'){renderAll();return}
@@ -167,7 +167,7 @@ function render(){
         ${rest&&rest.code===e.code?restHTML():''}
       </div>`}).join('')+`</section>`}).join('');
   state.justOpened=null;
-  if(saved.finished) html=`<div class="done-card"><h2>Day ${day.day} is done</h2><p>Nice work. Drink some water. ${esc(nextLine(w,day))}</p><button data-reset="1">Do it again another day</button></div>`+html;
+  if(saved.finished) html=`<div class="done-card"><h2>Day ${day.day} is done</h2><p>Nice work. Drink some water. ${esc(nextLine(w,day))}</p><button data-reset="1">Do it again another day</button></div>`+CTA_HTML+html;
   else html+=`<button class="finish" id="finish" ${allDone?'':'disabled'}>${allDone?'Finish workout':'Tick every set to finish'}</button>`;
   $('#workout').innerHTML=html;
 }

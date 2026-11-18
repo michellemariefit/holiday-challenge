@@ -250,5 +250,7 @@ function cardioInWeek(mon){const a=ymd(mon),b=ymd(new Date(mon.getTime()+6*DAY))
 function goal(){return store.get('hc:goal',null)}
 function daysLeft(){return Math.max(0,Math.round((parseYmd(CHALLENGE_END)-parseYmd(TODAY))/DAY))}
 // which Foundation day is next: rotate 1, 2, 3 by how many have been finished
-function nextDay(d,place){const w=placed(d,d.phases[0].workouts.find(x=>!x.home),place);const n=log().filter(x=>/^flf-1/.test(x.id)).length;return w.days[n%w.days.length]}
+function nextDay(d,place){const w=placed(d,d.phases[0].workouts.find(x=>!x.home),place);const n=log().filter(x=>/^tt-3/.test(x.id)).length;return w.days[n%w.days.length]}
 function streak(){let n=0;for(let i=0;i<120;i++){const dt=ymd(new Date(parseYmd(TODAY).getTime()-i*DAY));if(dt<(goal()||{}).start)break;const s=dayScore(dt);if(s.done>=s.total-1)n++;else if(i>0||s.done>0)break;else break}return n}
+
+const CTA_HTML=`<div class="card gold"><h3>Want more workouts like this?</h3><p>The Toning Vault has 16 of them, in 4 phases that change every month so you never repeat and your body never plateaus. This one is from Step 2.</p><a class="go gold" href="${SALE_URL}" target="_blank" rel="noopener">I want workouts like this every month →</a></div>`;
